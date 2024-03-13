@@ -1,0 +1,16 @@
+#Purpose of the Analysis
+ # -By analyzing historical data on funding applications, the model aims to help Alphabet Soup identify the applications with the highest chance of success, thereby optimizing the allocation of resources.
+#Target 
+  #- Target Variable: IS_SUCCESSFUL, indicates whether the funding was used effectively.
+#Features
+  #- Features: All other columns after preprocessing, including one-hot encoded categorical variables and numerical variables scaled using StandardScaler.
+# Variables Removed
+  #  The EIN and NAME of the organizations were removed 
+#Neurons, layers, and activation functions:
+  # The neural network model was designed with two hidden layers. The first hidden layer had 80 neurons, and the second had 30 neurons, both using the ReLU activation function to introduce non-linearity. This architecture was chosen to provide sufficient complexity for learning from the dataset while avoiding overfitting.
+#Attempts to increase model performance: Several strategies were employed to enhance model performance, including:
+  #Adjusting the number of neurons and layers to find a better structure for the network.
+  #Experimenting with different activation functions to improve learning efficiency.
+  #Implementing early stopping to prevent overfitting.
+  #Varying the batch size and number of epochs to optimize the training process.
+  #Reassessing and further preprocessing the input data, such as by adjusting the categories binned under "Other" for certain features.
